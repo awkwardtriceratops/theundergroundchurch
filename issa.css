@@ -40,6 +40,11 @@ header h1 {
     align-items: center;
     height: 100%;
     font-size: .65em;
+    text-decoration: none;
+}
+.centered-names a {
+    text-decoration: none;
+    color: black;
 }
 
 footer nav ul {
@@ -102,8 +107,11 @@ footer nav ul li a {
   .album {
     display: flex;
     flex-direction: row;
+    transition: filter 0.5s ease;
   }
-  
+  .album-grid:hover .album:not(:hover) {
+    filter: blur(5px);
+  }
   .album img {
     width: 150px;
     height: 150px;
@@ -132,4 +140,7 @@ footer nav ul li a {
     flex-direction: column;
     margin-right: 50px;
     padding-top: 20px;
+  }
+  .album-grid:hover .album:hover {
+    filter: none;
   }
