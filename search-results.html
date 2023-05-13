@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1 style="text-align: center;">SEARCH RESULTS</h2>
+    
+    <div id="searchResults" style="text-align: center;"></div>
+
+  <script>
+    function getParameterByName(name) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(window.location.href);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    const searchResultsDiv = document.getElementById('searchResults');
+    const keyword = getParameterByName('keyword');
+    if (keyword) {
+      const searchResultsText = document.createElement('p');
+      searchResultsText.textContent = `showing search results for: ${keyword}`;
+      searchResultsDiv.appendChild(searchResultsText);
+    } else {
+      const notFoundText = document.createElement('p');
+      notFoundText.textContent = 'no keyword found';
+      searchResultsDiv.appendChild(notFoundText);
+    }
+  </script>
+</body>
+</html>

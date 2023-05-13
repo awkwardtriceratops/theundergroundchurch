@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'snell';
+    src: url('assets/snell.ttf') format('truetype');
+    /* Add additional font file formats here if available */
+  }
+body {
+    background-color: rgb(215, 215, 215);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+header img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+header h1 {
+    font-family: 'snell';
+    font-stretch: extra-condensed;
+    font-weight: 1;
+}
+
+.centered-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: .65em;
+}
+
+footer nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    padding: 20px 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+footer nav ul li {
+    text-align: center;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: .65em;
+}
+
+.plus-symbol {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.plus-symbol img {
+    width: 1.5em;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .search-input {
+    background-color:rgb(215, 215, 215) ;
+    border: none;
+    outline: none;
+    color:black;
+    padding: 0px;
+    width: 5em;
+    font-size: .72em;
+    /*underline and italisize*/
+    font-style: italic;
+    border-bottom: 1px solid #000;
+
+  }
+  .search-input::placeholder {
+    color: black;
+  }

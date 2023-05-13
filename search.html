@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <input type="text" placeholder="Search" class="search-input" id="searchInput">
+  </div>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    
+    searchInput.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        const keyword = event.target.value.trim();
+        
+        if (keyword !== '') {
+          window.location.href = 'search-results.html?keyword=' + encodeURIComponent(keyword);
+        } else {
+          alert('Keyword not found');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'snell';
+    src: url('assets/snell.ttf') format('truetype');
+    /* Add additional font file formats here if available */
+  }
+body {
+    background-color: rgb(215, 215, 215);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+header img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+header h1 {
+    font-family: 'snell';
+    font-stretch: extra-condensed;
+    font-weight: 1;
+}
+
+.centered-names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: .65em;
+}
+
+footer nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    padding: 20px 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+footer nav ul li {
+    text-align: center;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: .65em;
+}
+
+.plus-symbol {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.plus-symbol img {
+    width: 1.5em;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .musician-image {
+    width: 3em;
+    height: auto;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+  }
+  
+  .musician-name {
+    margin-top: 20px;
+  }
+  
+  .album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5em;
+    margin-top: 3.5em;
+    grid-auto-rows: auto;
+  }
+  
+  .album {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .album img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding-bottom: 3em;
+  }
+  
+  .album-details {
+    font-size: 3em;
+    margin-left:5px;
+    padding-bottom: 5em;
+  }
+  
+  .album-date,
+  .album-name {
+    font-size: 7px;
+    text-align: left;
+    white-space: nowrap;
+    margin-left:5px;
+    padding-bottom: 2em;
+    margin-top:-3px;
+    line-height: 15px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding-top: 20px;
+  }
