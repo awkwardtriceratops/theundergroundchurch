@@ -85,11 +85,12 @@ footer nav ul li a {
   }
   
   .musician-image {
-    width: 3em;
-    height: auto;
     position: absolute;
-    top: 3em;
-    left: 3em;
+    top: 5em;
+    font-size: 8px;
+    left: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+
   }
   
   .musician-name {
@@ -99,7 +100,8 @@ footer nav ul li a {
   .album-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5em;
+    grid-gap: 2em;
+    margin-left:-2em;
     margin-top: 3.5em;
     grid-auto-rows: auto;
   }
@@ -109,14 +111,14 @@ footer nav ul li a {
     flex-direction: row;
     transition: filter 0.5s ease;
   }
-  .album-grid:hover .album:not(:hover) {
+/* .album-grid:hover .album:not(:hover) {
     filter: blur(5px);
-  }
+  } */
   .album img {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     object-fit: cover;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
   }
   
   .album-details {
@@ -131,9 +133,9 @@ footer nav ul li a {
     text-align: left;
     white-space: nowrap;
     margin-left:5px;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     margin-top:-3px;
-    line-height: 15px;
+    line-height: 10px;
   }
   .column {
     display: flex;
@@ -141,6 +143,6 @@ footer nav ul li a {
     margin-right: 50px;
     padding-top: 20px;
   }
-  .album-grid:hover .album:hover {
+/*   .album-grid:hover .album:hover {
     filter: none;
-  }
+  } */
